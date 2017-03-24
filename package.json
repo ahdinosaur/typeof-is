@@ -1,6 +1,6 @@
 {
   "name": "typeof-is",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "utility functions to check types using typeof",
   "main": "index.js",
   "scripts": {
