@@ -1,24 +1,5 @@
 'use strict'
 
-;[
-  'boolean',
-  'function',
-  'number',
-  'object',
-  'string',
-  'symbol',
-  'undefined'
-].forEach(type => {
-  exports[type] = Is(type)
-})
-
-function Is (type) {
-  return function (value) {
-    return typeof value === type
-  }
-}
-
-/*
 module.exports = {
   'boolean': isBoolean,
   'function': isFunction,
@@ -56,4 +37,3 @@ function isSymbol (value) {
 function isUndefined (value) {
   return typeof value === 'undefined'
 }
-*/
