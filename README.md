@@ -1,10 +1,16 @@
 # typeof-is
 
-utility functions to check types using [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+utility functions to check primitive types using [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
 ```shell
 npm install --save typeof-is
 ```
+
+## background
+
+i prefer using functions over `typeof ===` expressions`, so i often find myself writing these functions inline in my modules.
+
+i wrote this module because the related modules i found seemed to implement the kitchen sink of types, when i usually only need these and i'd rather install a specific module for other types.
 
 ## example
 
