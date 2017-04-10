@@ -8,7 +8,7 @@
   'string',
   'symbol',
   'undefined'
-].forEach(type => {
+].forEach(function (type) {
   exports[type] = isTypeOf(type)
 })
 

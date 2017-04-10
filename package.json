@@ -5,17 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node-dev example",
-    "test:deps": "dependency-check . && dependency-check . --extra --no-dev -i es2040",
+    "test:deps": "dependency-check . && dependency-check . --extra --no-dev",
     "test:lint": "standard",
     "test:node": "NODE_ENV=test run-default tape test/*.js --",
     "test:coverage": "NODE_ENV=test nyc npm run test:node",
     "test:coverage:report": "nyc report --reporter=lcov npm run test:node",
     "test": "npm-run-all -s test:node test:lint test:deps"
-  },
-  "browserify": {
-    "transform": [
-      "es2040"
-    ]
   },
   "repository": {
     "type": "git",
@@ -37,7 +32,5 @@
     "standard": "^8.6.0",
     "tape": "^4.6.3"
   },
-  "dependencies": {
-    "es2040": "^1.2.3"
-  }
+  "dependencies": {}
 }
